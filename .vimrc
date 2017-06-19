@@ -17,8 +17,8 @@ endif
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
+	syntax on
+	set hlsearch
 endif
 
 set tabstop=2
@@ -27,5 +27,8 @@ set expandtab
 set shiftwidth=2
 set smartindent
 set cindent
+set number
 
 execute pathogen#infect()
+
+
