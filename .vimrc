@@ -30,5 +30,9 @@ set cindent
 set number
 
 execute pathogen#infect()
-
+filetype plugin indent on
+call plug#begin('~/.vim/autoload')
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+call plug#end()
+map ,f :FZF<CR>
 
