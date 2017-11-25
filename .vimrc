@@ -28,6 +28,7 @@ set shiftwidth=2
 set smartindent
 set cindent
 set number
+set history=200
 
 execute pathogen#infect()
 filetype plugin indent on

@@ -148,7 +148,7 @@ ssh-add ~/.ssh/bitbucket &> /dev/null
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 export FZF_DEFAULT_COMMAND='find ./ -type f'
 
-mkcdir ()
+mkcd()
 {
   mkdir -p -- "$1" &&
   cd -P -- "$1"
