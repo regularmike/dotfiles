@@ -37,3 +37,9 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 call plug#end()
 map ,f :FZF<CR>
 
+" put cursor at last known position in file
+:au BufReadPost *
+  \ if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+  \ |   exe "normal! g`\""
+  \ | endif
+
